@@ -1,0 +1,55 @@
+body {
+  margin: 20px;
+  background-color: #E2F7F6;
+}
+
+.news1 {
+ margin: 10px;
+ color: red;
+}
+
+.news1 h2{
+	color:green;
+}
+#news2{
+color:blue;
+}
+
+h1{
+	background: orange;
+	padding: 9px 18px;
+	font-weight: bold;
+	text-shadow: 2px 2px;
+}
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+
+  p {
+  text-indent: 20px;
+  color: blue;
+  writing-mode: vertical-rl;
+}
+
+Img :hover {
+box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+round_img {
+   border-radius: 50px;
+   display: block;
+   margin: 0 auto;
+   width: 40%;
+}
+table {
+  border-collapse: collapse;
+  width:100%;
+  height:50px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}

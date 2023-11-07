@@ -1,12 +1,40 @@
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href ="{% static 'css/style.css' %}">
 </head>
 <body>
+  <h1>{{ Header1|lower }}</h1>
+  <p> value = {{value|default:"нет данных"}} </p>p>
+    {% if value > 0 %}
+        <h3> Переменная больше нуля</h3>
+    {% else %}
+        <h3> Переменная не больше нуля</h3>
+    {% endif %}
+ <li>
+    {% for n in numbers %}
+        <ul>{{ n.title|lower }}, {{ n.date }},</ul>
+    {% endfor %}
+    </li>
+  <p>
+      <img src="{% static 'img/Django_logo.svg' %}" alt="logo"  class="leftimg">
+      Django («Джанго») — это свободный фреймворк для разработки
+      быстрых и безопасных веб-приложений и сайтов на языке Python.
+      Использует шаблон проектирования MVC. Django был создан в 2005 году, когда веб-разработчики
+      из газеты Lawrence Journal-World стали использовать Python в качестве языка для создания веб-сайтов.
+      А в 2008 году вышел публичный первый релиз фреймворка. На сегодняшний день он продолжает развиваться.
+      Так, текущей версией фреймворка на момент написания этой статьи является версия 4.2, которая вышла
+      в апреле 2023 года. Каждый новый релиз фреймворка выходит в средним каждые 8 месяцев.
+      Кроме того, постоянно выходят обновления и исправления в безопасности.
+  </p>
+  <hr>
   <ul>
   <li><a href = "{% url 'admin:index' %}">Admin</a></li>
   <li><a href = "{% url 'about' %}">About</a></li>
   <li><a href = "{% url 'contacts' %}">Contacts</a></li>
-
 </ul>
+
+
 </body>

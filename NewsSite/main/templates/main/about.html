@@ -1,0 +1,21 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href ="{% static 'css/style.css' %}">
+</head>
+<body>
+  <h1>Обо мне</h1>
+  <p>
+      <img src="{% static 'img/kirill.jpg' %}" alt="kirill" style="width:200px"  class="round_img">
+      <hr>
+      Кузнецов Кирилл - главный специалист отдела биллинговых процедур АСР "СТАРТ".
+  </p>
+  <ul>
+  <li><a href = "{% url 'admin:index' %}">Admin</a></li>
+  <li><a href = "{% url 'contacts' %}">Contacts</a></li>
+  <li><a href = "{% url 'index' %}">Main</a></li>
+</ul>
+
+
+</body>

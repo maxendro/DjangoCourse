@@ -1,0 +1,35 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1>Контакты</h1>
+<table>
+    <tr>
+        <th>E-mail</th>
+        <th>Телефон</th>
+        <th><img src="{% static 'img/Telegram-logo.svg' %}" width="50 px" alt="telegram"></th>
+    </tr>
+    <tr>
+        <td>
+            kirill.v.kuznetsov@rt.ru
+        </td>
+        <td>
+            +7(926)240-2106
+        </td>
+        <td>
+            @Maxendro
+        </td>
+    </tr>
+
+</table>
+<ul>
+    <li><a href="{% url 'admin:index' %}">Admin</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'index' %}">Main</a></li>
+</ul>
+
+
+</body>
