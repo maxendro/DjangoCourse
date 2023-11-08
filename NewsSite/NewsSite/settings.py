@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'about',
     'home',
     'contacts',
+    'django_bootstrap5',
 
 ]
 
