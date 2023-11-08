@@ -341,12 +341,12 @@ textarea.input {
 
 .header-logo {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .header-logo .logo>img {
   width: 100%;
-  max-height: 70px;
+  max-height: 80px;
 }
 
 /*----------------------------*\
@@ -790,7 +790,7 @@ textarea.input {
 
 .banner.banner-1 .banner-caption {
   position: absolute;
-  top: 50%;
+  top: 150%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -814,7 +814,7 @@ textarea.input {
 ===========================================================*/
 
 #home .home-wrap {
-  margin-left: 270px;
+  margin-left: 380px;
 }
 
 #home-slick .banner {
@@ -1728,3 +1728,12 @@ textarea.input {
     width: 100%;
   }
 }
+
+table, th, td {
+  border: 1px solid;
+}
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }

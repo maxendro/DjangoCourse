@@ -16,4 +16,4 @@ def index(request):
                'numbers': l
 
                }
-    return render(request, 'main/index.html', context)
+    return render(request, 'home/index.html')
