@@ -2,6 +2,7 @@
 {% load django_bootstrap5 %}
 <!-- HEADER -->
 	<header>
+
 		<!-- top Header -->
 		<div id="top-header">
 			<div class="container">
@@ -62,7 +63,31 @@
 								</div>
 								<strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
 							</div>
-							<a href="#" class="text-uppercase">Login</a> / <a href="{% url 'signup' %}" class="text-uppercase">Join</a>
+							<a href="#" class="text-uppercase">Login</a> /
+
+							<a href="" data-toggle="modal" data-target = "#Modelsignup" class="text-uppercase">Join</a>
+
+							<div class="modal" tabindex="-1" role="dialog" id="Modelsignup">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">Регистрация нового пользователя</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											{% include 'home/signup.html' %}
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary">Сохранить</button>
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
 								<li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>

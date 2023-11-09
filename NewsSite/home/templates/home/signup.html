@@ -1,31 +1,29 @@
 {% load static %}
 {% load django_bootstrap5 %}
-<html lang="ru" >
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Регистрация </title>
-    <link rel="stylesheet" href ="{% static 'home/css/signstyle.css' %}">
-   </head>
-<body>
+
+
   <div class="wrapper">
     <h2>Регистрация</h2>
     <form action="#">
       <div class="input-box">
+        <p>Ваше имя*</p>
         <input type="text" placeholder="Введите ваше имя" required>
       </div>
       <div class="input-box">
+        <p>Ваш email*</p>
         <input type="text" placeholder="Введите ваш email" required>
       </div>
       <div class="input-box">
+        <p>Ваш пароль*</p>
         <input type="password" placeholder="Введите пароль" required>
       </div>
       <div class="input-box">
+        <p>Подтверждение пароля*</p>
         <input type="password" placeholder="Подтвердите пароль" required>
       </div>
       <div class="policy">
         <input type="checkbox">
-        <h3>Я согласен со всем бредом и дичью</h3>
+        <h6>Я согласен со всем бредом и дичью</h6>
       </div>
       <div class="input-box button">
         <input type="Submit" value="Зарегистрироваться">
@@ -35,5 +33,3 @@
       </div>
     </form>
   </div>
-</body>
-</html>
