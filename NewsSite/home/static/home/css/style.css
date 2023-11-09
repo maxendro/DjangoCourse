@@ -342,11 +342,14 @@ textarea.input {
 .header-logo {
   display: inline-block;
   margin-right: 10px;
+
+
 }
 
 .header-logo .logo>img {
   width: 100%;
   max-height: 80px;
+
 }
 
 /*----------------------------*\
@@ -361,6 +364,7 @@ textarea.input {
 
 .header-search>form {
   position: relative;
+}
 }
 
 .header-search>form .search-input {
@@ -391,8 +395,7 @@ textarea.input {
 
 .header-btns>li {
   display: inline-block;
-  vertical-align: top;
-  padding: 15px 0px;
+
 }
 
 .header-btns>li+li {
@@ -473,6 +476,7 @@ textarea.input {
 #navigation .container {
   position: relative;
 
+
 }
 
 /*----------------------------*\
@@ -482,7 +486,6 @@ textarea.input {
 .category-nav {
   float: left;
   width: 270px;
-
 
 }
 
@@ -556,7 +559,7 @@ textarea.input {
   padding: 15px;
   text-transform: uppercase;
   background: #30323A;
-  color: #FFF;
+
   font-weight: 700;
 }
 
@@ -808,10 +811,12 @@ textarea.input {
 
 #home .home-wrap {
   margin-left: 380px;
+
 }
 
 #home-slick .banner {
-  margin: 0px;
+  margin: 10px;
+
 }
 
 /*=========================================================
